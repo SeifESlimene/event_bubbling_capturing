@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events Bubbling Capturing</title>
+  <style>
+    main, div, p, span {
+      border: 1px solid red;
+    }
+    main {
+      height: 400px;
+      width: 400px;
+      background: rgb(170, 167, 167);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    div {
+      height: 300px;
+      width: 300px;
+      background: rgb(112, 110, 110);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    p {
+      height: 200px;
+      width: 200px;
+      background: rgb(65, 63, 63);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    span {
+      display: block;
+      height: 100px;
+      width: 100px;
+      background: #fff;
+    }
+    .gold {
+      background: gold;
+    }
+  </style>
+</head>
+<body>
+  <main id="m">
+    <div id="d">
+      <p id="p">
+        <span id="s"></span>
+      </p>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
